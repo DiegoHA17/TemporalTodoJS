@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+}
+
+.rectangulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 25vh;
+    margin: 0.6em;
+    padding: 0.6em;
+    border: 0.1em solid rgb(70, 70, 70);
+    background-color: white;
+}
+
+.piano{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 90%;
+    margin: 0.6em;
+    border: 0.1em solid rgb(70, 70, 70);
+    background-color: black;
+}
+
+.cuadrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 10vh;
+    margin: 0.6em;
+    border: 0.1em solid rgb(70, 70, 70);
+}
+.azul{
+    background-color: blue;
+}

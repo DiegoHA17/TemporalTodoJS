@@ -1,0 +1,31 @@
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: white; /* Clase "blanco" por defecto */
+    transition: background-color 0.1s;
+}
+
+/* Clases de estado final */
+.seleccionado { 
+    background-color: cyan; 
+}
+.gris { 
+    background-color: grey; 
+    pointer-events: none; 
+}
+.blanco { 
+    background-color: white; 
+}
+
+/* Clases de parpadeo (brillos) */
+.cyan { 
+    background-color: cyan; 
+}
+.verde { 
+    background-color: green; 
+}
+.rojo { 
+    background-color: red; 
+}

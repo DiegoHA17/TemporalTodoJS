@@ -1,0 +1,38 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    background-color: rgb(255, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cajaCargarDatos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2%;
+    padding: 2% 0;
+}
+
+.caja{
+    background-color: rgb(255, 255, 96);
+    border: 2% solid gray;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#botonCargarDatos{
+    background-color: orange;
+    border: 2% solid gray;
+    border-radius: 5%;
+    padding: 2%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+}

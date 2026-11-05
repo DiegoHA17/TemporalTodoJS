@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #cfefff 0%, #eef9ff 45%, #d6f4c9 100%);
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.juego {
+  width: min(94vw, 900px);
+  background: rgba(255, 255, 255, 0.9);
+  border: 3px solid #3f6b82;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.titulo {
+  margin: 0;
+  color: #233846;
+}
+
+.marcadores {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dato {
+  padding: 10px 16px;
+  border: 2px solid #8db6c8;
+  border-radius: 14px;
+  background: #f7fcff;
+  color: #233846;
+  font-weight: bold;
+}
+
+.zona-juego {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 3px solid #8db6c8;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 22%),
+    linear-gradient(180deg, #eaf8ff 0%, #c6ebff 60%, #bde2b4 100%);
+}
+
+.objetivo {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0.5);
+  pointer-events: none;
+  transition: transform 0.18s ease, opacity 0.18s ease, filter 0.18s ease;
+}
+
+.objetivo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+.objetivo.visible {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.objetivo.ocultando {
+  opacity: 0;
+  transform: scale(0.3);
+}
+
+.objetivo.acierto {
+  filter: drop-shadow(0 0 14px rgba(27, 181, 74, 0.6));
+  transform: scale(1.14);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rec propiedades</title>
+    <script>
+        window.onload = function() {
+            let persona = {
+                nombre: "Ana",
+                edad: 28,
+                profesion: "Ingeniera"
+            };
+
+            let resultado = "Propiedades del objeto persona:<br>";
+
+            for (let propiedad in persona) {
+                if(typeof persona[propiedad] !== 'function'){
+                    resultado += propiedad + ": " + persona[propiedad] + "<br>";
+                }
+            }
+
+            document.getElementById("recorrer").innerHTML = resultado;
+        };
+    </script>
+</head>
+<body>
+    <p id="recorrer">Recorrer propiedades de un objeto</p>
+</body>
+</html>

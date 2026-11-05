@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objeto Literal</title>
+    <script>
+      function crarLiteral() {
+        var punto = new Object();
+        punto.x = 5;
+        punto.y = punto.x * 2;
+        punto.mostrarCordenadas = function () {
+          return `(${punto.x}, ${punto.y})`;
+        };
+        console.log(punto.mostrarCordenadas());
+      }
+
+      window.onload = function () {
+        document.getElementById("crarLiteral").onclick = crarLiteral;
+      };
+    </script>
+  </head>
+  <body>
+    <p id="crarLiteral">crear literal</p>
+  </body>
+</html>

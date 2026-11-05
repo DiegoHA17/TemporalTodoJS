@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #ffffff;
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+
+#cuerpo_semaforo {
+  width: 52px;
+  height: 122px;
+  background: #5f9636;
+  border: 2px solid #487626;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+
+.luz {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#luz_roja {
+  background: #ff1100;
+}
+
+#luz_amarilla {
+  background: #ffc21a;
+}
+
+#luz_verde {
+  background: #00ff00;
+}
+
+#palo {
+  width: 12px;
+  height: 102px;
+  background: #5f9636;
+  border-left: 2px solid #487626;
+  border-right: 2px solid #487626;
+  box-sizing: border-box;
+}
+
+#base {
+  width: 34px;
+  height: 10px;
+  background: #5f9636;
+  border: 2px solid #487626;
+  box-sizing: border-box;
+}

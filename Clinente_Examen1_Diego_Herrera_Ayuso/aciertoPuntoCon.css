@@ -1,0 +1,128 @@
+
+*{
+    margin: 0;
+}
+
+#principal{
+    display: flex;
+}
+.datos{
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.bloqueDatosJugador{
+    background-color: rgb(87, 255, 87);
+    width: 90%;
+    margin: 1em;
+}
+.boton{
+    background-color: rgb(186, 186, 186);
+    display: flex;
+    align-items: center;
+    border: 0.15em solid gray;
+    border-radius: 25px;
+    padding: 0.5em 1em 0.5em 1em;
+}
+.datosValidados{
+    background-color: rgb(111, 213, 250);
+    width: 90%;
+}
+.datosJuego{
+    background-color: rgb(255, 123, 123);
+    width: 90%;
+    margin: 2em;
+}
+.datosCargados{
+    width: 30%;
+    padding: 0.5em;
+    border: 1px solid gray;
+}
+.resultado{
+    background-color: yellow;
+    padding: 1em;
+    width: 90%;
+}
+.textoDerecha{
+    display: flex;
+    justify-content: right;
+}
+.cuatroDatos{
+    width: 25%;
+}
+.izquierda{
+    background-color: rgb(255, 182, 182);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+    width: 26vw;
+}
+#central{
+    background-color: yellow;
+    display: flex;
+    align-items: row;
+    height: 100vh;
+    width: 48vw;
+}
+.superior{
+    background-color: rgb(140, 77, 202);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    height: 23vh;
+}
+.inferior{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    height: 23vh;
+}
+.derecha{
+    background-color: rgb(127, 127, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    width: 26vw;
+}
+.columna{
+    display: flex;
+    flex-direction: column;
+}
+#destino{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    background-color: orange;
+    height: 54vh;
+}
+.cuadrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 10vh;
+    margin: 0.6em;
+    border: 0.1em solid rgb(70, 70, 70);
+}
+.rojo{
+    background-color: red;
+}
+.azul{
+    background-color: blue;
+}
+.verde{
+    background-color: green;
+}
+.amarillo{
+    background-color: yellow;
+}

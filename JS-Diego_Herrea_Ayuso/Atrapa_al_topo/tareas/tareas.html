@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de tareas</title>
+    <link rel="stylesheet" href="tareas.css">
+</head>
+<body>
+    <main class="contenedor">
+        <section class="panel">
+            <h1>Tareas</h1>
+
+            <form id="formularioTarea" class="formulario">
+                <label>
+                    Titulo
+                    <input type="text" id="titulo" name="titulo" required>
+                </label>
+
+                <label>
+                    Descripcion
+                    <textarea id="descripcion" name="descripcion" rows="3" required></textarea>
+                </label>
+
+                <label>
+                    Prioridad
+                    <select id="prioridad" name="prioridad" required>
+                        <option value="">Selecciona una prioridad</option>
+                        <option value="baja">Baja</option>
+                        <option value="media">Media</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </label>
+
+                <label>
+                    Tiempo limite (segundos)
+                    <input type="number" id="tiempo" name="tiempo" min="1" required>
+                </label>
+
+                <button type="submit">Anadir tarea</button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>Listado</h2>
+            <div id="listadoTareas" class="listado"></div>
+        </section>
+    </main>
+</body>
+<script src="tareas.js"></script>
+</html>

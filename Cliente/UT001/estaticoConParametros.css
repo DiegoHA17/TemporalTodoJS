@@ -1,0 +1,30 @@
+
+#barraLarga{
+    margin: 25px;
+    padding: 10px;
+}
+
+.colorVioletaBarraLarga{
+    background-color: violet;
+}
+
+.colorMarronBarraLarga{
+    background-color: brown;
+}
+
+.estiloCuadrado{
+    margin: 100px;
+    height: 200px;
+    width: 200px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadradoColorVerde{
+    background-color: green;
+}
+
+.cuadradoColorAmarillo{
+    background-color: yellow;
+}

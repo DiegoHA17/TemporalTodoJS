@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+ 
+html, body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.fila{
+    display: flex;
+}
+ 
+.cuadro{
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    width: 10vw;
+    height: 10vw;
+    background-color: grey;
+    color: aliceblue;
+    border: 0.2em solid rgb(38, 38, 38);
+    margin: 2em;
+}
+.cuadro2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    width: 10vw;
+    height: 10vw;
+    background-color: grey;
+    color: aliceblue;
+    border: 0.2em solid rgb(38, 38, 38);
+    margin: 4em;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siete y medio (Cartas: Sota, caballo y Rey)</title>
+    <link rel="stylesheet" href="SieteYMedioCartas.css">
+    <script src="SieteYMedioCartas.js"></script>
+</head>
+<body>
+
+   <div id="principal">
+
+    <!-- INDICADOR DE TURNO -->
+    <p id="turno">Turno: Jugador 1</p>
+
+    <!-- CONTENEDOR QUE VA A COLOCAR JUGADOR 1 Y 2 AL LADO -->
+    <div id="jugadores">
+
+        <div id="filaUno" class="fila">
+            <p>Jugador 1</p>
+            <div id="jugadorPrimero1" class="cuadro jugador1"></div>
+            <div id="jugadorPrimero2" class="cuadro jugador1"></div>
+            <div id="jugadorPrimero3" class="cuadro jugador1"></div>
+
+            <div class="puntuacion-label">Puntuacion:</div>
+            <div class="puntuacion-valor" id="puntuacionJ1">...</div>
+        </div>
+
+        <div id="filaDos" class="fila">
+            <p>Jugador 2</p>
+            <div id="jugadorSegundo1" class="cuadro jugador2"></div>
+            <div id="jugadorSegundo2" class="cuadro jugador2"></div>
+            <div id="jugadorSegundo3" class="cuadro jugador2"></div>
+
+            <div class="puntuacion-label">Puntuacion:</div>
+            <div class="puntuacion-valor" id="puntuacionJ2">...</div>
+        </div>
+
+    </div>
+
+    <!-- BOTÓN DEBAJO -->
+    <div id="botonFinalizar" class="boton">Finalizar</div>
+
+</div>
+
+    
+</body>
+</html>

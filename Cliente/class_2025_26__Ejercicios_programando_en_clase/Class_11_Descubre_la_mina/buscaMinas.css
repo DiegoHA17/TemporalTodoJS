@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 90px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.casilla {
+    width: 90px;
+    height: 90px;
+    background-color: #888;
+    border-radius: 10px;
+    cursor: pointer;
+
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.casilla.descubierta {
+    background-color: #ddd;
+    cursor: default;
+}
+
+.casilla.mina.descubierta {
+    background-image: url("img/mina-terrestre.png");
+}
+
+.casilla.bomba.descubierta {
+    background-image: url("img/bomba-nuclear.png");
+}
+
+.casilla.agua.descubierta {
+    background-image: url("img/mar.png");
+}
+
+.casilla.nube.descubierta {
+    background-image: url("img/nubes.png");
+}

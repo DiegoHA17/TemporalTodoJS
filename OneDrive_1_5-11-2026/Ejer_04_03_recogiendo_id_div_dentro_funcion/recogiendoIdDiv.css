@@ -1,0 +1,29 @@
+
+*{
+    margin: 0;
+}
+html,body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.fila{
+    display: flex;
+    justify-content: center;
+}
+.cuadrado{
+    background-color: yellow;
+    border: 0.1em solid black;
+    margin: 1em;
+    height: 10vw;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cuadradoColorVerde{
+    background-color: green;
+}

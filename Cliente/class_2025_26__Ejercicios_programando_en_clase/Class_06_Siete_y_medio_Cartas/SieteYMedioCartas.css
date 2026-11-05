@@ -1,0 +1,87 @@
+/* Centrado general */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;     /* Contenido en columna */
+    justify-content: center;    /* Centrado vertical */
+    align-items: center;        /* Centrado horizontal */
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor global */
+#principal {
+    display: flex;
+    flex-direction: column;     /* Jugadores arriba, botón abajo */
+    align-items: center;
+    gap: 30px;
+}
+
+/* Contenedor horizontal de jugadores */
+#jugadores {
+    display: flex;              /* ← hace que estén al lado */
+    flex-direction: row;
+    gap: 60px;                  /* separación entre jugador 1 y 2 */
+}
+
+/* Tarjeta de cada jugador */
+.fila {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fila p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Cuadros de cartas */
+.cuadro {
+    display: flex;
+    width: 100px;
+    height: 150px;
+    border: 4px solid black;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Puntuación */
+.puntuacion-label {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.puntuacion-valor {
+    font-size: 20px;
+    background: #ddd;
+    padding: 6px 20px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+/* Botón */
+.boton {
+    background: #ff4040;
+    padding: 14px 40px;
+    color: white;
+    font-size: 22px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.boton:hover {
+    background: #cc0000;
+}

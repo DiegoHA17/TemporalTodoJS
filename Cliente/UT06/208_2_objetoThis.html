@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre comillas</title>
+    <script>
+        function crearconllaves(){
+            let punto = {
+                x:19,
+                y:36,
+                mostrarCoordenadas:function(){
+                    return `(${punto.x}, ${punto.y})`;
+                }
+            };
+            console.log(punto.mostrarCoordenadas());
+        }
+        function objetothis(){
+            let punto = {
+                x:19,
+                y:36,
+                mostrarCoordenadas:function(){
+                    return `(${this.x}, ${this.y})`;
+                }
+            };
+            console.log(punto.mostrarCoordenadas());
+        }
+        function utilizarthisaccesofuncionexterna(){
+            function doblrar(){
+                 this.valor *= 2;
+            }  
+            let numero = {
+                valor: 10,
+                doblarValor: doblrar
+            };
+            console.log(numero);
+            let punto2 ={
+                x:5,
+                y:8,
+                doblarValor:function(){
+                    return this.x *=2, this.y *=2;
+                }
+            }
+            numero.doblarValor();
+            punto2.doblarValor();
+            console.log(`llavo numero.doblarValor(): ${numero.valor}`);
+        }
+        window.onload = function(){
+            document.getElementById("objetollave").onclick = crearconllaves();
+            document.getElementById("objetothis").onclick = objetothis();
+            utilizarthisaccesofuncionexterna();
+        }
+    </script>
+</head>
+<body>
+    <p id="objetollave">Objetollave</p>
+    <p id="objetothis">Crear objeto this</p>
+</body>
+</html>

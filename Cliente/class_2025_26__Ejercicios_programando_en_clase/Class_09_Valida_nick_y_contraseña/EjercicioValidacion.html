@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Usuarios</title>
+</head>
+<body>
+ 
+    <h1>Registro de Usuarios</h1>
+
+    <form id="registroForm" method="post">
+        <label for="nombre">Nick: 
+            <input type="text" id="nombre" required>
+        </label>
+        <br><br>
+        <label for="pass">Contraseña:  
+            <input type="password" id="pass" required>
+        </label>
+        <br><br>
+        <button type="submit" id="boton">Añadir a la lista</button>
+    </form>
+
+    <h3>Usuarios registrados:</h3>
+    <ul id="listaUsuarios">
+        </ul>
+
+    <script src="EjercicioValidacion.js"></script>
+</body>
+</html>

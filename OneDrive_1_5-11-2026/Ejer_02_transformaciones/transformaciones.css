@@ -1,0 +1,70 @@
+html,body {    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fila{    
+    display: flex;    
+    place-items: center; /* centrao horizontal y verticalmente */
+    height: 10em;
+    width: 60vw;
+    margin: 1vw ;
+}
+
+.celda{    
+    display: flex;
+    flex:1;
+    place-items: center;
+    justify-content: center;
+    margin: 1vw;    
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(72, 94, 234);    
+    padding: 1vw;
+    border-radius: 0.75vw;
+    color: white;
+    width: 15vw;
+}
+
+.botonGrande{    
+    font-size: 2vw;
+    width: 22vw;
+}
+
+#circulo {
+    background-color: blue;
+    border-radius: 50%;
+    height: 6vw;
+    width: 6vw;
+}
+
+#cuadrado {
+    background-color: rgb(47, 255, 85);
+    height: 6vw;
+    width: 6vw;
+}
+
+#rectangulo{
+    background-color: orange;
+    height: 6vw;
+    width: 12vw;
+}
+.colorFondoPagina{
+    background-color: yellow;
+}
+.colorCirculo{
+    background-color: rgb(139, 0, 181) !important;
+}
+.aumentaCuadrado{
+    transform: scale(1.5);
+}
+.ocultaRectangulo{
+    display: none;
+}

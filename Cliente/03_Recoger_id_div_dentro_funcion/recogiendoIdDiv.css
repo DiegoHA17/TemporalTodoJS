@@ -1,0 +1,36 @@
+
+*{
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fila{
+    display: flex;
+    justify-content: center;
+}
+
+.cuadrado{
+    border: 0.1em solid black;
+    margin: 1em;
+    height: 10vw;
+    width: 10vw; /*tienen que tener el mismo numero y la unidad el width y height*/
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadradoColorVerde{
+    background-color:greenyellow;
+}
+
+.cuadradoColorAmarillo{
+    background-color: yellow;
+}
+

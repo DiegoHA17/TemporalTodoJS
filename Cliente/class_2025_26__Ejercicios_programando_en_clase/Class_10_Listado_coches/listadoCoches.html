@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="listadoCoches.css">
+    <script src="listadoCoches.js"></script>
+    <title>Listado Coches</title>
+</head>
+<body>
+    <main>
+        <form action="#">
+            <div>
+                <label for="marca">Marca:</label>
+                <input type="text" name="marca" id="marca">
+            </div>
+            <div>
+                <label for="color">Color:</label>
+                <input type="text" name="color" id="color">
+            </div>
+            <div>
+                <label for="energia">Energía:</label>
+                <select name="energia" id="energia">
+                    <option value="gasolina">Gasolina</option>
+                    <option value="diesel">Diésel</option>
+                    <option value="gas">Gas</option>
+                    <option value="electrico">Eléctrico</option>
+                </select>
+            </div>
+            <div>
+                <label for="numeroDeOcupantes">Número de ocupantes</label>
+                <input type="text" name="numeroDeOcupantes" id="numeroDeOcupantes">
+            </div>
+            <input type="submit" id="enviar" value="Enviar">
+        </form>
+        <div id="mostrarLista">
+            Mostrar Lista
+        </div>
+        <div id="numeroDeCoches">
+            Número de coches: 0
+        </div>
+        <div id="resultados">
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de alta jugadores</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <main class="contenedor">
+        <section class="panel">
+            <h1>Alta de jugadores</h1>
+
+            <form id="formularioJugador" class="formulario">
+                <label>
+                    Nombre
+                    <input type="text" id="nombre" name="nombre" required>
+                </label>
+
+                <label>
+                    Edad
+                    <input type="number" id="edad" name="edad" min="1" required>
+                </label>
+
+                <label>
+                    Nivel
+                    <select id="nivel" name="nivel" required>
+                        <option value="">Selecciona un nivel</option>
+                        <option value="facil">Facil</option>
+                        <option value="medio">Medio</option>
+                        <option value="dificil">Dificil</option>
+                    </select>
+                </label>
+
+                <label>
+                    Color favorito
+                    <input type="color" id="color" name="color" value="#4f8ef7">
+                </label>
+
+                <button type="submit">Añadir</button>
+            </form>
+
+            <p id="mensaje" class="mensaje"></p>
+        </section>
+
+        <section class="panel">
+            <h2>Jugadores anadidos</h2>
+            <div id="listadoJugadores" class="listado"></div>
+        </section>
+    </main>
+</body>
+<script src="formulario.js"></script>
+</html>

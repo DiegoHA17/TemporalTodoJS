@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coches</title>
+    <script src="ListadoCoches.js" defer></script>
+    <link rel="stylesheet" href="ListadoCoches.css">
+</head>
+<body>
+    <div id="cont1">
+        <h1>Nuevo coche:</h1>
+        <form id="formulario">
+            Marca: <input type="text" name="marca"><br>
+            Color: <input type="text" name="color"><br>
+            Energia: <input type="text" name="energia"><br>
+        <button type="button" id="botonnuevocoche">Agregar coche</button>
+        </form>
+    </div>
+    <div id="cont2">
+        <h2>Listado de coches:</h2>
+        <button id="botonlistar">Listar coches</button>
+        <div id="listadocoches"></div>
+    </div>
+    <div id="cont3">
+        <h2>Información del coche:</h2>
+        <form id="formulariocoche">
+        Numero: <input type="number" id="numerocoche" min="0"><br>
+          Marca: <input type="checkbox" name="marca"><br>
+          Color: <input type="checkbox" name="color"><br>
+          Energia: <input type="checkbox" name="energia"><br>
+        <button type="button" id="botoninfo">Mostrar información</button>
+        </form>
+        <div id="info"></div>
+    </div>
+</body>
+</html>

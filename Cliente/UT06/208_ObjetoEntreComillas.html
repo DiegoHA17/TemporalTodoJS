@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objeto Entre comillas</title>
+    <script>
+      function entrecomillas() {
+        let libro = {
+          titulo: "Aprendiendo JavaScript",
+          autores: ["Juan Pérez", "Ana Gómez"],
+          año: 2021,
+          editorial: {
+            nombre: "TechBooks",
+            ciudad: "Madrid",
+          },
+        };
+        console.log(libro.titulo);
+        console.log(libro.autores[0]);
+      }
+
+      window.onload = function () {
+        entrecomillas();
+      };
+    </script>
+  </head>
+  <body>
+    <p id="entrecomillas">Crear objeto con propiedad entre comillas</p>
+  </body>
+</html>

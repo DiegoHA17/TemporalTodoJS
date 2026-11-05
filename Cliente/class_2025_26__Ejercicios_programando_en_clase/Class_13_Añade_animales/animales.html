@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animales</title>
+    <link rel="stylesheet" href="animales.css" />
+    <script src="animales.js" defer></script>
+  </head>
+  <body>
+    <form id="formulario">
+      <label>Animal:</label>
+      <input type="text" id="animal" />
+
+      <label>Patas:</label>
+    
+      <input type="number" min="0" id="patas" />
+
+      <label>Peso:</label>
+      <input type="number" min="0" id="peso" />
+
+      <label>Color:</label>
+      <input type="text" id="color" />
+
+      <label>Altura:</label>
+      <input type="number" min="0" id="altura" />
+
+      <label>Longevidad:</label>
+      <input type="number" min="0" id="longevidad" />
+
+      <br /><br />
+
+      <button type="button" id="Enviar">Enviar</button>
+      <button type="button" id="Eliminar">Eliminar</button>
+    </form>
+
+    <div id="animales-lista">
+      <h2>Lista de Animales</h2>
+      <ul id="lista"></ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #eef2f7, #dbe7f3);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  color: #2c3e50;
+}
+
+/* Contenedores principales */
+#cont1,
+#cont2,
+#cont3 {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Títulos */
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Formularios */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  margin-right: 6px;
+  transform: scale(1.1);
+}
+
+/* Botones */
+button {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(52, 152, 219, 0.35);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Listado coches */
+#listadocoches {
+  margin-top: 15px;
+}
+
+#listadocoches p {
+  background: #f4f7fb;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 8px 0;
+  border-left: 5px solid #3498db;
+  font-weight: 500;
+}
+
+/* ========================= */
+/* INFO DEL COCHE CON GRID   */
+/* 2 ARRIBA · 1 ABAJO        */
+/* ========================= */
+
+#info {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* Cada dato */
+#info p {
+  background: #f8fbff;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* El tercer elemento ocupa toda la fila */
+#info p:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  #info {
+    grid-template-columns: 1fr;
+  }
+
+  #info p:nth-child(3) {
+    grid-column: auto;
+  }
+}

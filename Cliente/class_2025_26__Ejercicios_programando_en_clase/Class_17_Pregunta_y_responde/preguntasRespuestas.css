@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    background-color: white;
+    width: 400px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.respuestas {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+button {
+    background-color: lightgray;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.correcto {
+    background-color: #4caf50;
+    color: white;
+}
+
+.incorrecto {
+    background-color: #f44336;
+    color: white;
+}
+
+.reiniciar {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #7b2ff7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.reiniciar:hover {
+    opacity: 0.9;
+}

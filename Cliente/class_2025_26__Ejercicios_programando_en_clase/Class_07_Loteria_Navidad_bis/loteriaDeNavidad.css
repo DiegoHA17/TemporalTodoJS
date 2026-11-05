@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.casilla {
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.numero {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.premio {
+    font-size: 14px;
+    color: #555;
+}
+
+#premios {
+    margin-top: 30px;
+}

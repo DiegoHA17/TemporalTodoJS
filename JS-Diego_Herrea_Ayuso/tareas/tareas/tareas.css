@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.contenedor {
+  width: min(960px, 92vw);
+  margin: 32px auto;
+  display: grid;
+  gap: 24px;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+.formulario {
+  display: grid;
+  gap: 16px;
+}
+
+.formulario label {
+  display: grid;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select,
+.formulario button {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.formulario textarea {
+  resize: vertical;
+}
+
+.formulario button {
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.listado {
+  display: grid;
+  gap: 16px;
+}
+
+.tarea {
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+  padding: 16px;
+  background: #f8fafc;
+}
+
+.tarea.baja {
+  border-left: 8px solid #22c55e;
+}
+
+.tarea.media {
+  border-left: 8px solid #f59e0b;
+}
+
+.tarea.alta {
+  border-left: 8px solid #ef4444;
+}
+
+.tarea.expirada {
+  opacity: 0.7;
+  background: #e5e7eb;
+}
+
+.tarea-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tarea-cabecera h3 {
+  margin: 0;
+}
+
+.cronometro {
+  font-weight: bold;
+}
+
+.boton-eliminar {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #dc2626;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.descripcion {
+  margin: 0 0 10px;
+}
+
+.estado {
+  font-size: 0.95rem;
+  font-weight: bold;
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fila {
+    display: flex;
+}
+
+.cuadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: 15vw;
+    height: 15vw;
+    background-color: gray;
+    border: 0.1em solid black;
+    margin: 1em;
+}

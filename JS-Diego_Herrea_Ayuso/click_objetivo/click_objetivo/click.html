@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clika al objetivo</title>
+    <link rel="stylesheet" href="click.css">
+</head>
+<body>
+    <main id="app">
+        <section class="juego">
+            <div class="cabecera">
+                <h1 class="titulo">Click al objetivo</h1>
+                <div class="marcadores">
+                    <div class="dato">Puntos: <span id="puntos">0</span></div>
+                    <div class="dato">Fallos: <span id="fallos">0</span></div>
+                </div>
+            </div>
+            <div id="zonaJuego" class="zona-juego">
+                <button id="objetivo" class="objetivo" type="button">
+                    <img id="imagenObjetivo" src="mosca.png" alt="Objetivo">
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="click.js"></script>
+</html>

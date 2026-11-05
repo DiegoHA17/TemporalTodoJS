@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="/" type="image/x-icon" />
+    <link rel="stylesheet" href="aciertoPuntoCon.css" />
+    <script src="aciertoPuntoCon2.js"></script>
+  </head>
+  <body>
+    <div id="principal">
+      <div id="izquierda" class="izquierda">
+        <div id="color1" class="cuadrado color">rojo1</div>
+        <div id="color2" class="cuadrado color">azul2</div>
+        <div id="color3" class="cuadrado color">verde3</div>
+        <div id="color4" class="cuadrado color">amarillo4</div>
+      </div>
+
+      <div id="central" class="columna">
+        <div id="superior" class="superior">
+          <div id="romano1" class="cuadrado romano">I1</div>
+          <div id="romano2" class="cuadrado romano">II2</div>
+          <div id="romano3" class="cuadrado romano">III3</div>
+          <div id="romano4" class="cuadrado romano">V4</div>
+        </div>
+        <div id="destino">
+          <div class="bloqueDatosJugador">
+            <div class="datos">DATOS DEL JUGADOR</div>
+            <div class="datos">
+              <label for="nombre" class="datosCargados textoDerecha"
+                >Nombre:</label
+              >
+              <div class="datosCargados">
+                <input type="text" name="nombre" id="nombre" class="" />
+              </div>
+            </div>
+            <div class="datos">
+              <label for="fechaNacimiento" class="datosCargados textoDerecha"
+                >F.Nacimiento:</label
+              >
+              <div class="datosCargados">
+                <input type="text" name="fecha" id="fecha" class="" />
+              </div>
+            </div>
+            <div class="datos">
+              <span id="cargarJugador" class="boton">Cargar</span>
+            </div>
+          </div>
+          <div class="datos datosValidados">
+            <div class="datosCargados textoDerecha cuatroDatos">Nombre:</div>
+            <div id="destinoNombre" class="datosCargados cuatroDatos">...</div>
+            <div class="datosCargados textoDerecha cuatroDatos">
+              F.nacimiento:
+            </div>
+            <div id="destinoFecha" class="datosCargados cuatroDatos">...</div>
+          </div>
+          <div class="datosJuego">
+            <div class="datos">
+              <div class="datosCargados textoDerecha">Color:</div>
+              <div id="color" class="datosCargados">...</div>
+            </div>
+            <div class="datos">
+              <div class="datosCargados textoDerecha">Figura:</div>
+              <div id="forma" class="datosCargados">...</div>
+            </div>
+            <div class="datos">
+              <div class="datosCargados textoDerecha">Romano:</div>
+              <div id="romano" class="datosCargados">...</div>
+            </div>
+            <div class="datos">
+              <div class="datosCargados textoDerecha">Numero:</div>
+              <div id="numero" class="datosCargados">...</div>
+            </div>
+          </div>
+          <div class="datos resultado">
+            <div class="datosCargados textoDerecha">PUNTUACIÓN:</div>
+            <div id="resultado" class="datosCargados">...</div>
+          </div>
+        </div>
+        <div id="inferior" class="inferior">
+          <div id="numero1" class="cuadrado numero">1</div>
+          <div id="numero2" class="cuadrado numero">2</div>
+          <div id="numero3" class="cuadrado numero">3</div>
+          <div id="numero4" class="cuadrado numero">4</div>
+        </div>
+      </div>
+
+      <div id="derecha" class="derecha">
+        <div id="forma1" class="cuadrado forma">cuadrado1</div>
+        <div id="forma2" class="cuadrado forma">rectangulo2</div>
+        <div id="forma3" class="cuadrado forma">triangulo3</div>
+        <div id="forma4" class="cuadrado forma">circulo4</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url('https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dGV4dHVyYSUyMGRlJTIwbGElMjBtZXNhfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000');
+    background-size: cover;
+}
+p,#puntos1,#puntos2{
+    color: beige;
+    background-color: black;
+    padding: 0.4rem;
+    border-radius: 12rem;
+}
+
+.Jugador>div{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5); 
+}
+#Contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+button{
+    padding: 30px 6px;
+    position: absolute;
+    margin-top: -12.5rem;
+    margin-left: 45.3rem;
+    z-index: 3;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: beige;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    transition: opacity 5s ease;
+    box-shadow: 0 0 20px 10px rgba(245, 245, 220, 0.4);
+}
+button.visible{
+    opacity: 1;
+}
+button:hover{
+    background-color: rgb(79, 158, 132);
+
+}
+.Jugador {
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    justify-items: center;
+    padding: 10px;
+}
+.carta {
+    width: 100px;
+    height: 150px;
+    border: 1px solid black;
+    color: black; 
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+
+    background-image: url('https://img.freepik.com/vector-premium/patron-transparente-rombos-rojos-fondo-blanco_197792-2283.jpg');
+    background-size: cover;
+
+    transition: transform 0.6s;
+    transform: background 0.6s;
+    transform-style: preserve-3d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.carta.girada {
+    transform: rotateY(180deg);
+    background-image: none;
+    background-color: wheat;
+
+}
+
+.carta.invisible {
+    visibility: hidden;
+}
+.carta.visible{
+    visibility: visible;
+    animation: caerCarta 0.6s ease-out;
+}
+
+.carta.girada span {
+    color: black;
+    transform: rotateY(180deg);
+    display: inline-block;
+}
+.ficha {
+    width: 15rem;
+    border-radius: 50%;
+    height: 15rem;
+    position: absolute;
+    top: 45px;       
+    left: 40rem;      
+    cursor: pointer;
+    z-index: 2 ;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.3s ease;
+}
+
+.ficha img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    pointer-events: none; 
+}
+
+
+
+@keyframes caerCarta {
+    0% {
+        transform: translateY(-90px) scale(1.1);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(10px) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+

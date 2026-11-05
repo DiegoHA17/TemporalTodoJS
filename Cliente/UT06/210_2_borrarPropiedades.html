@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borrar Prop</title>
+    <script>
+        window.onload = function(){
+            document.getElementById("borrarPropiedad").onclick = function(){
+                var objeto = {
+                    nombre: "Juan",
+                    edad: 30,
+                    profesion: "Desarrollador"
+                };
+                console.log("Antes de borrar:", objeto);
+                delete objeto.profesion;
+                console.log("Después de borrar:", objeto);
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <p id="borrarPropiedad">Click para borrar propiedad</p>
+  </body>
+</html>

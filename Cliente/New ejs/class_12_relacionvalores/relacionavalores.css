@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#columna1,
+#columna2 {
+  display: inline-block;
+  margin: 20px;
+}
+
+.cuadrado {
+  width: 100px;
+  padding: 10px;
+  margin: 8px;
+  text-align: center;
+  border: 2px solid black;
+  cursor: pointer;
+  background-color: lightgray;
+  user-select: none;
+  font-size: 18px;
+}
+
+.seleccionado {
+  background-color: yellow;
+}

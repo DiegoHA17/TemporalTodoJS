@@ -1,0 +1,18 @@
+div{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    height: 50%;
+    width: 50%;
+    background-color: gray;
+}
+p{
+    height: 50%;
+    background-color: lightblue;
+    margin: 20%;
+}
+button{
+    margin: 20%;
+}

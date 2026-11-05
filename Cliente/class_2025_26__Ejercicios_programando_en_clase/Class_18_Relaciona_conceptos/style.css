@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+#columna1,
+#columna2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 40px;
+}
+
+.elemento {
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.25s ease;
+    user-select: none;
+}
+
+/* Hover */
+.elemento:hover {
+    background-color: #eaeaea;
+    transform: scale(1.03);
+}
+
+/* Palabra seleccionada */
+.seleccionado {
+    border-color: #007bff;
+    background-color: #e6f0ff;
+}
+
+/* Relación correcta */
+.correcto {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+    cursor: default;
+}
+
+/* Relación incorrecta (si la usas más adelante) */
+.incorrecto {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+/* Evitar volver a pulsar un elemento ya correcto */
+.correcto:hover {
+    transform: none;
+    background-color: #d4edda;
+}

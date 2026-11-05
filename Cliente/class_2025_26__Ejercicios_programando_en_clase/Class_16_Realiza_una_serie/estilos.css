@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.opcion {
+    padding: 15px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    width: 120px;
+}
+
+.cuadrado {
+    background-color: red;
+}
+
+.triangulo {
+    background-color: green;
+}
+
+.circulo {
+    background-color: gold;
+    color: black;
+}
+
+.rectangulo {
+    background-color: blue;
+}
+
+#zonaDibujo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: white;
+    min-height: 100px;
+}
+
+/* Figuras dibujadas */
+.figura {
+    margin-right: 15px;
+}
+
+.figura.cuadrado {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+}
+
+.figura.triangulo {
+    width: 0;
+    height: 0;
+    background-color: white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid green;
+}
+
+.figura.circulo {
+    width: 40px;
+    height: 40px;
+    background-color: gold;
+    border-radius: 50%;
+}
+
+.figura.rectangulo {
+    width: 60px;
+    height: 30px;
+    background-color: blue;
+    margin-top: 10px;
+}

@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+}
+
+html,body {
+    height: 100%;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+
+/*.fila {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}*/
+
+.celda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    width: 6vw;
+    height: 6vw;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.colorCelda {
+    background-color: gray;
+    color: white;
+}
+
+.colorPulsado {
+    background-color: blue;
+    color: white;
+}
+
+.colorParpadear {
+    background-color: yellow;
+    color: black;
+}
+
+.colorFinal {
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Calibri';
+    margin: 0;
+}
+
+#senial {
+    background-color: #f3ff52;
+    padding: 1em;
+    width: 50vh;
+}
+
+#borde {
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+#redondel {
+    display: flex;
+    font-size: 10em;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 2em;
+}
+
+#cuadro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    width: 70%;
+    margin-bottom: .25em;
+    border-radius: 5px;
+    color: orange;
+    font-size: 8em;
+}
+
+.bordeRojo {
+    border: 30px solid red;
+}
+
+.bordeVerde {
+    border: 30px solid greenyellow;
+}
+
+form {
+    background-color: lightgray;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 2em;
+    width: 40vh;
+    height: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#boton {
+    font-size: 3em;
+    margin-top: 1em;
+    padding: .5em;
+    background-color: orange;
+    border-radius: 5px;
+    border: 2px solid black;
+}

@@ -1,0 +1,13 @@
+body{
+    background-color: green;
+    text-align: center;
+    margin-top: 15em;
+    cursor: pointer;
+}
+#idTitulo,#idFondo{
+    border: 0.05em solid black;
+    height: 3em;
+}
+.fondoNaranja{
+    background-color: orangered;
+}
